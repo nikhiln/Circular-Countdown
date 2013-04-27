@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Circular Count Down Demo - Nikhil Navadiya</title>
+	<meta name="description" content="jQuery Circular CountDown Demo">
+	<meta name="keywords" content="Nikhil Navadiya, Circular Countdown, Countdown, jQuery, javascript, css">
+	<link rel="alternate" type="application/rss+xml" href="http://blog.nikhilnavadiya.in/rss">
+	<!-- STYLESHEETS : begin -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/icomonn.css">
+	<!-- STYLESHEETS : end -->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+	<script src="js/jquery.ccountdown.js"></script>
+	<script src="js/init.js"></script>
+	<!--[if lte IE 7]><script src="css/lte-ie7.js"></script><![endif]-->
+	
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-40477669-2']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	</script>
+	</head>
+	<body class=" indexpage">
+		<div id="top" class="container">
+			<div id="wrapper">
+				<div id="profile">
+					<div class="profile-inner">
+					</div>
+				</div>
+				<!-- HEADER : begin -->
+				<header>
+					<div class="row">
+						<div class="offset1 span6">
+							<!-- LOGO : begin -->
+							<div id="logo">
+								<a href="">Circular CountDown</a>
+							</div>
+							<!-- LOGO : end -->
+						</div>
+						<div class="span4">
+							<a href="https://github.com/nikhiln/Circular-Countdown" class="githublink"><i class="icon-github"></i><span>Fork me on GitHub</span></a>
+						</div>
+					</div>
+				</header>
+				<!-- HEADER : end -->
+				<!-- TITLE : begin -->
+				<div id="title" class="">
+					<div class="row">
+						<div class="offset1 span10">
+							<div class="title-inner">
+								<h1><strong>Hi there! Here's the examples of beutiful circular countdown</strong></h1>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- DESCRIPTION : end -->
+				
+				<div class="core">
+					<div class="row" style="padding-left: 10%;">
+						<div class="row">
+							<div class="span3">
+							<h3>Simple dial style</h3>
+								<code>
+									data-width="160" <br/>
+									data-min="0"  <br/>
+									data-max="365"  <br/>
+									data-displayPrevious=true  <br/>
+									data-fgColor="#ff003c"  <br/>
+									data-readOnly="true"
+								</code>
+							</div>
+							<div class="span8" style="padding-top: 22px;">
+								<div class="ccounter">
+									<input class="knob days" data-width="160" data-min="0" data-max="365" data-displayPrevious=true data-fgColor="#ff003c" data-readOnly="true" value="1">
+									<input class="knob hour" data-width="160" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#ff003c" data-readOnly="true" value="1">
+									<input class="knob minute" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ff003c" data-readOnly="true" value="1">
+									<input class="knob second" data-width="160" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ff003c" data-readOnly="true" value="0" data-bgcolor="#eee">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row" style="padding-left: 10%;">
+						<div class="row">
+							<div class="span3">
+							<h3>Inner dial style</h3>
+								<code>
+									data-readOnly="true" <br/>
+									data-width="150" <br/>
+									data-displayPrevious=true <br/>
+									data-fgColor="#ff003c" <br/>
+									data-skin="tron" <br/>
+									data-thickness=".2"
+								</code>
+							</div>
+							<div class="span8" style="padding-top: 26px;">
+								<div class="ccounter">
+									<input class="knob days" data-readOnly="true" data-width="150" data-displayPrevious=true data-fgColor="#ff003c" data-skin="tron" data-thickness=".2" data-min="0" data-max="365" value="75">
+										<input class="knob hour" data-readOnly="true" data-width="150" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#ff003c" data-skin="tron" data-thickness=".2" value="75">
+										<input class="knob minute" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ff003c" data-skin="tron" data-thickness=".2" value="75">
+										<input class="knob second" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ff003c" data-skin="tron" data-thickness=".2" value="75">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row" style="padding-left: 10%;">
+						<div class="row">
+							<div class="span3">
+							<h3>Mixed color dial style</h3>
+								<code>
+									data-readOnly="true" <br/>
+									data-width="150" <br/>
+									data-displayPrevious=true <br/>
+									data-skin="tron" <br/>
+									data-thickness=".2"
+								</code>
+								</div>
+							<div class="span8" style="padding-top: 10px;">
+								<div class="ccounter">
+									<input class="knob days" data-readOnly="true" data-width="150" data-displayPrevious=true data-fgColor="#66EE66" data-skin="tron" data-thickness=".2" data-min="0" data-max="365" value="75">
+										<input class="knob hour" data-readOnly="true" data-width="150" data-min="0" data-max="24" data-displayPrevious=true data-fgColor="#800080" data-skin="tron" data-thickness=".2" value="75">
+										<input class="knob minute" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#ffec03" data-skin="tron" data-thickness=".2" value="75">
+										<input class="knob second" data-readOnly="true" data-width="150" data-min="0" data-max="60" data-displayPrevious=true data-fgColor="#00CED1" data-skin="tron" data-thickness=".2" value="75">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+				
+				<!-- WIDGETS : begin -->
+				<div id="widgets">
+					<div id="snipet-widget" class="loading widget light-loader">
+						<div class="widget-inner">
+							<div class="row">
+								<div class="span10 offset1 title">
+									<h3>Special thanks to <a href="https://github.com/aterrien" class="bottom-link">aterrien</a> for providing a beutiful <a href="https://github.com/aterrien/jQuery-Knob" class="bottom-link">jQuery-Knob</a> (js library) to generate dial.</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- FOOTER : begin -->
+        <footer class="centered">
+            <p>Made in A'bad with <i class=" icon-heart-empty"></i> by <a href="http://www.nikhilnavadiya.in">Nikhil Navadiya</a></p>
+            <!-- SOCIAL ICONS : begin -->
+            <ul class="social-icons light-icons">
+                <li class="twitter"><a href="http://twitter.com/nikhil_navadiya"><i class="icon-twitter"></i></a></li>
+                <li class="facebook"><a href="http://facebook.com/nikhil.navadiya.1"><i class="icon-facebook"></i></a></li>
+				<li class="googleplus"><a href="https://github.com/nikhiln"><i class="icon-github"></i></a></li>
+                <li class="googleplus"><a href="https://plus.google.com/u/0/114184346678069659264"><i class="icon-google-plus"></i></a></li>
+                <li class="email"><a href="mailto:nikhil.navadiya@gmail.com"><i class="icon-mail"></i></a></li>
+            </ul>
+            <!-- SOCIAL ICONS : end -->
+            <a href="#top" class="back-to-top"><i class="icon-arrow-up-2"></i></a>
+        </footer>
+        <!-- FOOTER : end -->
+		</div>
+		
+		<script>
+			//enter the count down date using the format year/month/day
+			$(".ccounter").ccountdown(2013,5,25);
+		</script>
+    
+		
+		<!-- GOOGLE WEB FONTS : begin -->
+		<script type="text/javascript">
+			var primary_font_code = 'Sintony:400,700:latin,latin-ext';
+			var secondary_font_code = 'Bree+Serif::latin,latin-ext';
+			var web_fonts = [primary_font_code];
+			if(secondary_font_code != ''){
+			    web_fonts.push(secondary_font_code);
+			}
+			
+			WebFontConfig = {
+			    google: { families: web_fonts }
+			};
+			(function() {
+			    var wf = document.createElement('script');
+			    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			    '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			    wf.type = 'text/javascript';
+			    wf.async = 'true';
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(wf, s);
+			})();
+			
+		</script>
+		<!-- GOOGLE WEB FONTS : end -->
+	</body>
+</html>
