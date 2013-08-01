@@ -27,10 +27,13 @@
 			_futurestring=_montharray[_m-1]+" "+_d+", "+_yr;
 			/* calculation of remaining days, hrs, min, and secs */
 			_dd=Date.parse(_futurestring)-Date.parse(_todaystring);
-			_dday=Math.floor(_dd/(60*60*1000*24)*1);
-			_dhour=Math.floor((_dd%(60*60*1000*24))/(60*60*1000)*1);
-			_dmin=Math.floor(((_dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
-			_dsec=Math.floor((((_dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+			//Because this is a count down the circles must be decreased and go backward to zero
+			// so it must be ([max]-[the current value].)
+			//You can get the the max from data-max by var dMax=$('.days').attr('data-max');
+			_dday=Math.floor(365-(_dd/(60*60*1000*24)*1));
+			_dhour=Math.floor(24-((_dd%(60*60*1000*24))/(60*60*1000)*1));
+			_dmin=Math.floor(60-(((_dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1));
+			_dsec=Math.floor(60-((((_dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1));
 			var $ss = $(".second"), $mm = $(".minute"),$hh = $(".hour"),$dd = $(".days");
 			$ss.val(_dsec).trigger("change");
 			$mm.val(_dmin).trigger("change");
