@@ -10,8 +10,9 @@
  * Thanks to http://www.javascriptkit.com/
  */
 (function($) {
-	$.fn.ccountdown = function(_yr, _m, _d, _t) {
+	$.fn.ccountdown = function(_yr, _m, _d, _t, callback) {
 		var $this = this;
+		var interval;
 		var _montharray = new Array("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 		var _today = new Date();
 		// calling function first time so that it wll setup remaining time
@@ -41,10 +42,16 @@
 			$mm.val(_dmin).trigger("change");
 			$hh.val(_dhour).trigger("change");
 			$dd.val(_dday).trigger("change");
+			if (_dd == 0){
+			    window.clearInterval(interval);
+			    if (typeof callback == 'function'){
+			    	callback.call(this);
+			    }
+			}
 		};
 		
 		_changeTime();
 
-		setInterval(_changeTime, 1000);
+		interval = setInterval(_changeTime, 1000);
 	};
 })(jQuery);
